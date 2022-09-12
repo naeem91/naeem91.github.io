@@ -1,7 +1,7 @@
 ---
 title: "Python 3 Text Encoding"
 date: 2022-09-12T17:53:46+05:00
-draft: true
+draft: false
 ---
 
 ## Why do we need text encoding?

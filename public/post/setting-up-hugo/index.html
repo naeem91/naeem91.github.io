@@ -52,7 +52,7 @@ Here&rsquo;s how to use Hugo to generate a static site and then host it on Githu
 <meta itemprop="description" content="Installing and using Hugo Hugo is a static site generator tool built with the Go language. I was just reading some random blog and at the bottom of their page found built with Hugo thing. After checking it I decided to give it a try, not knowing that I already have a gh pages hosted blog using Jekyll, which I never used after the first time.
 Here&rsquo;s how to use Hugo to generate a static site and then host it on Github pages:"><meta itemprop="datePublished" content="2022-07-16T00:22:14+05:00" />
 <meta itemprop="dateModified" content="2022-07-16T00:22:14+05:00" />
-<meta itemprop="wordCount" content="146">
+<meta itemprop="wordCount" content="227">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setting Up Hugo"/>
 <meta name="twitter:description" content="Installing and using Hugo Hugo is a static site generator tool built with the Go language. I was just reading some random blog and at the bottom of their page found built with Hugo thing. After checking it I decided to give it a try, not knowing that I already have a gh pages hosted blog using Jekyll, which I never used after the first time.
@@ -154,10 +154,37 @@ I was just reading some random blog and at the bottom of their page found <code>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install hugo
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>On Ubuntu:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo snap install hugo
+</span></span></code></pre></td></tr></table>
+</div>
 </div><p>After installing it, you <a href="https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site">create a site</a>, author pages, posts and other type of content using the <a href="https://www.markdownguide.org/cheat-sheet/">markdown language</a>.</p>
 <p>On your local machine, you can run the hugo server to see how the site looks in the browser.
 That&rsquo;s pretty much all about the installation and basic usage.</p>
 <h2 id="hosting-on-github-pages">Hosting on Github Pages</h2>
+<p>There are various options to <a href="https://gohugo.io/categories/hosting-and-deployment">host your hugo blog</a>. I chose to host it on Github Pages.
+This blog&rsquo;s GH actions setup can be found <a href="https://github.com/naeem91/naeem91.github.io/blob/master/.github/workflows/gh-pages.yml">here</a>.
+This GH action:</p>
+<ul>
+<li>On push of <code>master</code> branch:
+<ul>
+<li>Runs a <code>deploy</code> job which:
+<ul>
+<li>Checksout code</li>
+<li>Installs Hugo</li>
+<li>Builds the static site</li>
+<li>Pushes the generated site to <code>gh-pages</code> branch.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The prereq is that your repo&rsquo;s Github pages settings (found at your-repo/settings/pages) are set to deploy from the <code>gh-pages</code> branch.</p>
 
     </div>
 
@@ -179,7 +206,11 @@ That&rsquo;s pretty much all about the installation and basic usage.</p>
 <footer class="post-footer">
       
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/python-text-encoding/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Python 3 Text Encoding</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         
       </nav>
     </footer>
