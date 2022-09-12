@@ -52,7 +52,7 @@ Schemes to map characters to numbers (character codes) To store, transmit and pr
 <meta itemprop="description" content="Why do we need text encoding? Humans understand text, computers understand binary. Encoding is the process of converting human readable text into sequences of bytes and decoding is the reverse of that.
 Schemes to map characters to numbers (character codes) To store, transmit and process characters digitally, the characters are mapped to integers, called code points. ASCII is one such scheme. In ASCII, each character is represented by a number from 0 to 127."><meta itemprop="datePublished" content="2022-09-12T17:53:46+05:00" />
 <meta itemprop="dateModified" content="2022-09-12T17:53:46+05:00" />
-<meta itemprop="wordCount" content="279">
+<meta itemprop="wordCount" content="257">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python 3 Text Encoding"/>
 <meta name="twitter:description" content="Why do we need text encoding? Humans understand text, computers understand binary. Encoding is the process of converting human readable text into sequences of bytes and decoding is the reverse of that.
@@ -171,19 +171,6 @@ The binary equivalent of a unicode character has variable length bits and not fi
 </span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xff\xfe</span><span class="s1">S</span><span class="se">\x00\xe3\x00</span><span class="s1">o</span><span class="se">\x00</span><span class="s1"> </span><span class="se">\x00</span><span class="s1">P</span><span class="se">\x00</span><span class="s1">a</span><span class="se">\x00</span><span class="s1">u</span><span class="se">\x00</span><span class="s1">l</span><span class="se">\x00</span><span class="s1">o</span><span class="se">\x00</span><span class="s1">&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">city</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;iso8859_1&#39;</span><span class="p">)</span>  
 </span></span><span class="line"><span class="cl"><span class="sa">b</span><span class="s1">&#39;S</span><span class="se">\xe3</span><span class="s1">o Paulo&#39;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>A trick that I found to see bytes in their decimal equivalents:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">a_byte</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;A&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">a_byte</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="mi">65</span><span class="p">]</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>

@@ -33,9 +33,4 @@ b'\xff\xfeS\x00\xe3\x00o\x00 \x00P\x00a\x00u\x00l\x00o\x00'
 >>> city.encode('iso8859_1')  
 b'S\xe3o Paulo'
 ```
-A trick that I found to see bytes in their decimal equivalents:
-```python
->>> a_byte = b'A'
->>> list(a_byte)
-[65]
-```
+
