@@ -2,6 +2,7 @@
 title: "Introspecting Python Functions"
 date: 2022-09-13T18:49:50+05:00
 draft: false
+categories: ["Python"]
 ---
 
 ### Functions are objects

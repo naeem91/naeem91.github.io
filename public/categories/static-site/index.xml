@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>static site on Naeem&#39;s blog</title>
+    <link>https://naeem91.github.io/categories/static-site/</link>
+    <description>Recent content in static site on Naeem&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Jul 2022 00:22:14 +0500</lastBuildDate><atom:link href="https://naeem91.github.io/categories/static-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up Hugo</title>
+      <link>https://naeem91.github.io/post/setting-up-hugo/</link>
+      <pubDate>Sat, 16 Jul 2022 00:22:14 +0500</pubDate>
+      
+      <guid>https://naeem91.github.io/post/setting-up-hugo/</guid>
+      <description>Installing and using Hugo Hugo is a static site generator tool built with the Go language. I was just reading some random blog and at the bottom of their page found built with Hugo thing. After checking it I decided to give it a try, not knowing that I already have a gh pages hosted blog using Jekyll, which I never used after the first time.
+Here&amp;rsquo;s how to use Hugo to generate a static site and then host it on Github pages:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,6 +2,7 @@
 title: "Setting Up Hugo"
 date: 2022-07-16T00:22:14+05:00
 draft: false
+categories: ["Hugo", "static site"]
 ---
 ## Installing and using Hugo
 Hugo is a static site generator tool built with the Go language.
